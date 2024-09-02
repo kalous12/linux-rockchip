@@ -1,0 +1,1173 @@
+linux-rockchip-5.10 (5.10.160-32) jammy; urgency=medium
+
+  * arm64: dts: turing-rk1: enable USB3 host and USB2 (EHCI & OHCI)
+  * arm64: dts: Add support for FriendlyElec CM3588
+  * arm64: dts: nanopi-6-common: Add several features based on vendor dtsi
+  * arm64: dts: hinlink-h6xk: add missing led gpio 
+
+ -- Joshua Riek <jjriek@verizon.net>  Sat, 09 Mar 2024 10:44:49 -0500
+
+linux-rockchip-5.10 (5.10.160-31) jammy; urgency=medium
+
+  * Update gcc-wrapper.py to disable interpret_warning
+  * Update armsom-sige7 device tree
+  * Fix CEC on rk356X on tv restart (armbian#149)
+  * station-m3: add cooling-maps pwm-fan support.
+  * rockchip_linux_defconfig: enable additional broadcom modules
+
+ -- Joshua Riek <jjriek@verizon.net>  Mon, 12 Feb 2024 09:59:09 -0500
+
+linux-rockchip-5.10 (5.10.160-30) jammy; urgency=medium
+
+  * arm64: dts: rockchip: Radxa ROCK 5 ITX DTS patch
+
+ -- Joshua Riek <jjriek@verizon.net>  Sun, 28 Jan 2024 21:00:46 -0500
+
+linux-rockchip-5.10 (5.10.160-29) jammy; urgency=medium
+
+  * rockchip_linux_defconfig: enable AP6212, AIC8800, and UWE5622
+  * arm64: dts: rock-5a: pull down data-strobe to fix emmc compatibility
+  * arm64: dts: rockchip: Add Radxa Zero 3 overlays
+  * drivers: wireless: aic8800_sdio: disable debug info
+  * uwe5622: various warning and firmware path fixes
+  * drivers: wireless: aic8800_sdio: fix duplicate firmware path warning
+  * arm64: dts: rockchip: Add the Radxa Zero 3
+  * Added device tree overlays files for armsom-sige7 board: camera-imx415-4k.dtbo and display-10hd.dtbo
+  * media: rockchip: hdmirx: add VIDIOC_S_INPUT and VIDIOC_G_INPUT
+  * Remove deprected switch. Logs saying its not needed anymore.
+  * add mangopi m28k dts
+
+ -- Joshua Riek <jjriek@verizon.net>  Sun, 28 Jan 2024 14:03:04 -0500
+
+linux-rockchip-5.10 (5.10.160-28) jammy; urgency=medium
+
+  * arm64: dts: rk3588-fxblox-rk1: add edp and user leds
+  * drivers: drm: dw-hdmi-qp: Apply ddc-i2c-rxfilter only if DT prop exists 
+
+ -- Joshua Riek <jjriek@verizon.net>  Thu, 28 Dec 2023 08:42:12 -0500
+
+linux-rockchip-5.10 (5.10.160-27) jammy; urgency=medium
+
+  * arm64: dts: turing-rk1: Enable ddc-i2c-rxfilter
+  * drivers: drm: dw-hdmi-qp: Add ddc-i2c-rxfilter DT prop
+
+ -- Joshua Riek <jjriek@verizon.net>  Mon, 25 Dec 2023 10:22:50 -0500
+
+linux-rockchip-5.10 (5.10.160-26) jammy; urgency=medium
+
+  * Add armsom-sige7 device tree
+  * arm64: dts: Add the Mixtile Core RK3588E  
+
+ -- Joshua Riek <jjriek@verizon.net>  Thu, 21 Dec 2023 08:32:02 -0500
+
+linux-rockchip-5.10 (5.10.160-25) jammy; urgency=medium
+
+  * arm64: dts: rock-5-itx: Fix hdmiin audio
+  * arm64: dts: Add overlays for the ROCK 5 ITX
+  * arm64: dts: add rock 5 itx
+  * arm64: dts: Add overlays for the Radxa NX5
+  * arm64: dts: Add support for the Radxa NX5
+  * add hinlink ht2 dts
+  * add AIC8800 sdio wireless driver
+
+ -- Joshua Riek <jjriek@verizon.net>  Sat, 16 Dec 2023 17:33:56 -0500
+
+linux-rockchip-5.10 (5.10.160-24) jammy; urgency=medium
+
+  * arm64: dts: turing-rk1: fix rtc-hym8563 init failure 
+
+ -- Joshua Riek <jjriek@verizon.net>  Wed, 06 Dec 2023 16:07:40 -0500
+
+linux-rockchip-5.10 (5.10.160-23) jammy; urgency=medium
+
+  * arm64: dts: turing-rk1: pull up hym8563 init pinctrl
+  * arm64: dts: Add support for roc-rk3588s-pc
+  * arm64: dts: add new board hinlink-hnas
+
+ -- Joshua Riek <jjriek@verizon.net>  Mon, 04 Dec 2023 17:46:07 -0500
+
+linux-rockchip-5.10 (5.10.160-22) jammy; urgency=medium
+
+  * arm64: dts: turing-rk1: enable USB TYPEC1 interface
+  * arm64: dts: turing-rk1: add Display Port support
+
+ -- Joshua Riek <jjriek@verizon.net>  Mon, 27 Nov 2023 22:16:35 -0500
+
+linux-rockchip-5.10 (5.10.160-21) jammy; urgency=medium
+
+  * arm64: dts: turing-rk1: pull down emmc_data_strobe to fix HS400
+  * Revert "arm64: dts: turing-rk1: use HS200 mode for eMMC" 
+
+ -- Joshua Riek <jjriek@verizon.net>  Thu, 16 Nov 2023 08:36:01 -0500
+
+linux-rockchip-5.10 (5.10.160-20) jammy; urgency=medium
+
+  * arm64: dts: turing-rk1: enable reserved memory for cma
+  * arm64: dts: turing-rk1: add usb pinctrl and missing regulators 
+
+ -- Joshua Riek <jjriek@verizon.net>  Sun, 12 Nov 2023 09:52:27 -0500
+
+linux-rockchip-5.10 (5.10.160-19) jammy; urgency=medium
+
+  * video: rockchip: rga3: fix 4:2:2 10-bit reading in rga2
+  * arm64: dts: turing-rk1: fix USB 2.0 PHY0 OTG
+
+ -- Joshua Riek <jjriek@verizon.net>  Wed, 08 Nov 2023 17:10:40 -0500
+
+linux-rockchip-5.10 (5.10.160-18) jammy; urgency=medium
+
+  * arm64: dts: turing-rk1: use HS200 mode for eMMC 
+  * ethernet: realtek: r8125: stop rss spamming kernel logs
+
+ -- Joshua Riek <jjriek@verizon.net>  Fri, 03 Nov 2023 22:59:01 -0400
+
+linux-rockchip-5.10 (5.10.160-17) jammy; urgency=medium
+
+  * drivers: bluetooth: add support for RTL8852BE
+  * arm64: dts: delete duplicate gpio-leds nodes
+  * arm64: dts: cm5 io: modify vcc5v0_host gpio
+  * arm64: dts: cm5 io: add dp sound
+  * arm64: dts: move status led configuration to radxa cm5
+  * arm64: dts: turing-rk1: configure extcon attribute
+  * arm64: dts: rk3588-armsom-w3.dts detele chosen
+
+ -- Joshua Riek <jjriek@verizon.net>  Sat, 28 Oct 2023 07:15:14 -0400
+
+linux-rockchip-5.10.160 (5.10.160-16) jammy; urgency=medium
+
+  * arm64: dts: turing-rk1: enable hdmi0 sound
+  * video: rockchip: rga3: fix compatibility with legacy global alpha config
+  * arm64: dts: rockchip: rk3568: remove opp-supported-hw from gpu_opp_table
+  * arm64: dts: turing-rk1: device tree cleanup and use correct stdout-path
+  * arm64: dts: mekotronics: enable avsd; add missing sound-dai-cells to v12's hdmirx_ctrler
+  * Add several overlays for YY3568
+  * arm64: dts: Add support for YY3568
+
+ -- Joshua Riek <jjriek@verizon.net>  Mon, 23 Oct 2023 17:48:33 -0400
+
+linux-rockchip-5.10.160 (5.10.160-15) jammy; urgency=medium
+
+  * arm64: dts: turing-rk1: add overlay to enable sata2 on pcie2x1l1
+  * arm64: dts: add support for the Turing RK1
+  * media: i2c: rk628_csi: update the driver to v0.0.8
+  * arm64: dts: rockchip: add rk3308 evb v13
+  * arm64: dts: rockchip: fixup check warning about is31fl3236 addr in rk3308 evb
+  * ARM: dts: rockchip: rk3308 boards: add uart rts pinctrl for bt
+  * arm64: dts: rockchip: rk3308-evb: add uart rts pinctrl for bt
+  * arm64: dts: rockchip: rk3588: Add aclk_usb for ehci and ohci controllers
+  * arm64: dts: rockchip: rk3588s: Add aclk_usb3otg for usb pd
+  * arm64: rockchip_defconfig: set MINIDUMP_MAX_ENTRIES 512
+  * arm64: traps: save cpu regs to minidump when cpus die
+  * watchdog/hardlockup: move hardlock_notifier before panic
+  * soc: rockchip: minidump: pass minidump_table to uboot
+  * drm/panel: simple: Replace msleep() with usleep_range()
+  * Input: gt1x - Enable async suspend/resume on fb blank
+  * net: rfkill-bt: match irq_wake to irq.
+  * ARM: dts: rockchip: add rv1106g-evb2-v12-nofastae-spi-nand.dts
+  * fiq_debugger: fix spurious triggering of fiq
+  * ARM: rockchip: rv1106: pm: fix error when WAKEUP_TO_SYSTEM_RESET
+  * ARM: rockchip: rv1106: sleep: enable fst_glb_rst trigger pmu reset
+  * soc: rockchip: pm_config: support config wakeup irqs for virtual poweroff
+  * soc: rockchip: pm_config: do pm_wakeup_clear when virtual poweroff
+  * pinctrl: rockchip: rk3328: Add I2Sx-SCLK as iomux-route switch
+  * pinctrl: rockchip: rk3568: Add I2Sx-SCLK as iomux-route switch
+  * pinctrl: rockchip: rv1126: Add I2Sx-SCLK as iomux-route switch
+  * drm/bridge: synopsys: Recover sound for XRUN routine
+  * ASoC: rockchip: pdm: Add support for PATHx controls
+  * ASoC: rockchip: pdm: Use add_component_controls
+  * ASoC: rockchip: i2s: Add property 'bclk-fs'
+  * ASoC: rockchip: i2s: Add "BCLK_Ratio" kcontrol
+  * ASoC: rockchip: i2s: Add support for PCM R/W Wait Time
+  * ASoC: rockchip: i2s: Add support for CLK-ALWAYS-ON quirks
+  * ASoC: rockchip: i2s: Use add_component_controls
+  * ASoC: rockchip: i2s-tdm: Add support for PCM R/W Wait Time
+  * ASoC: rockchip: i2s-tdm: Add support for PATHx controls
+  * ASoC: rockchip: i2s-tdm: Use add_component_controls
+  * ASoC: rockchip: multi-dais: Fix component's name_prefix
+  * ASoC: rockchip: sai: Fix Transmit SDOx Select
+  * ASoC: rockchip: sai: Reduce FIFO XRUN warning prompt
+  * media: rockchip: hdmirx: avoid PKTDEC_AVIIF_CHG_IRQ mistrigger.
+  * video: rockchip: mpp: rkvenc2: fix slice mode poll failed
+  * arm64: dts: rockchip: px30: Add reboot_mode label for Android
+  * ARM: dts: rockchip: add rv1106g-evb1-v11-nofastae-spi-nand
+  * PCI: rockchip: dw: Use handle_level_irq for legacy irq
+  * arm64: dts: rockchip: rk3562-amp: Move the rpmsg node backwards.
+  * arm64: dts: rockchip: rk3568-amp: Move the rpmsg node backwards.
+  * arm64: dts: rockchip: rk3588-amp: support ap rpmsg
+  * rpmsg: rockchip: use rockchip,rpmsg for all rockchip platform
+  * arm64: dts: rockchip: rk3588-vehicle-evb: add v22 dts files and use serdes-mfd-display default
+  * mailbox: rockchip: Add Rockchip MBOX Demo
+  * arm64: dts: rockchip: add rk3588 evb1 lp4 v10 linux amp dts
+  * arm64: dts: rockchip: rk3588-amp: support ap core for amp
+  * arm64: dts: rockchip: add dtsi for nca9539 io expander on rk3588 vehicle EVBV22
+  * dt-bindings: gpio: nca9539: Add nca9539 support
+  * gpio: nca9539: Add support Novosense NCA9539 I2C GPIO expander
+  * media: i2c: maxim4c: driver version v2.02.00
+  * ASoC: codecs: rv1106_codec: add support DAC control manually
+  * arm64: configs: rockchip: Enable SND_SOC_ROCKCHIP_MULTI_DAIS
+  * arm64: configs: rockchip_linux: Enable SND_SOC_ROCKCHIP_MULTI_DAIS
+  * arm64: dts: rockchip: rk3562: Add property 'sound-name-prefix' for SAIx
+  * ASoC: rockchip: multi-dais: Introduce module option prealloc_buffer_size_kbytes
+  * ASoC: rockchip: multi-dais: Add support for more capabilities
+  * ASoC: rockchip: multi-dais: Add support controls for sub dais
+  * ASoC: rockchip: multi_dais_pcm: Fix warning
+  * ASoC: rockchip: sai: Introduce SND_SOC_ROCKCHIP_SAI_VERBOSE
+  * ASoC: rockchip: sai: Add support for more capabilities
+  * ASoC: rockchip: sai: Allow mclk shift around 1 Hz
+  * dmaengine: pl330: Add support for mcbufsz parsed from DT
+  * irqchip/gic-v3-its: add GFP_DMA32 flag for memory allocated for ITS in rk3567
+  * arm64: dts: rockchip: rk3588-vehicle-maxim-cameras-s66: Enable maxim4c driver
+  * arm64: dts: rockchip: rk3588-vehicle-evb-v21: Enable maxim4c driver
+  * arm64: dts: rockchip: add rk3588-vehicle-evb-maxim-max96712-dcphy1.dtsi
+  * arm64: dts: rockchip: add rk3588-vehicle-evb-maxim-max96712-dcphy0.dtsi
+  * arm64: dts: rockchip: add rk3588-vehicle-evb-maxim-max96722-dphy3.dtsi
+  * arm64: dts: rockchip: add rk3588-vehicle-evb-maxim-max96722-dphy0.dtsi
+  * arm64: dts: rockchip: add rk3588-vehicle-evb-maxim-max96712-dphy0.dtsi
+  * arm64: dts: rockchip: add rk3588-vehicle-evb-maxim-max96712-dphy3.dtsi
+  * media: i2c: maxim4c: driver version v2.01.00
+  * media: rockchip: hdmirx: enhance compatibility and stability.
+  * arm64: dts: rockchip: add rk3567 evb2 dual lvds devicetree
+  * arm64: dts: rockchip: add rk3567 evb2 dual channel lvds devicetree
+  * arm64: dts: rockchip: add dual lvds support for rk3567/rk3568
+  * drm/rockchip: lvds: add dual lvds left right mode support
+  * drm/rockchip: lvds: add support lvds1 for rk3567
+  * drm/rockchip: vop2: update for dual lvds
+  * drm/rockchip: add dynamic debug for vop
+  * media: rockchip: vicap fixes issue of hdr raw capture
+  * media: i2c: sc1346: fix fps error
+  * ARM: configs: add rk3308-aarch32-ia.config for intelligent home appliances in RK3308 soc
+  * arm64: dts: rockchip: add RK3567 evaluation board devicetree
+  * Revert "arm64: dts: rockchip: rk3568-evb: add can nodes"
+  * arm64: dts: rockchip: add core dtsi for RK3567 Soc
+  * cpufreq: dt-platdev: Add rk3567 project into blacklist
+  * soc: rockchip: cpuinfo: Add support for rk3567
+  * video: rockchip: rga3: changing to close acquire_fence_fd in user-space
+  * video: rockchip: rga3: add check_csc
+  * video: rockchip: rga3: add full_csc clip config
+  * video: rockchip: rga3: add full_csc enable
+  * video: rockchip: rga3: compatible with legacy global alpha config
+  * video: rockchip: rga3: replace magic numbers with enum
+  * video: rockchip: rga3: support fg/bg global alpha
+  * mfd: display-serdes: add serdes display driver support base on mfd arch
+  * phy: rockchip-inno-usb2: fix USB OTG not working in HOST mode for RK3328
+  * arm64: dts: rockchip: rk3528: Remove ddc gpio control during hotplug
+  * media: i2c: it6616: create hdmirx_class devices
+  * media: i2c: lt6911uxc: create hdmirx_class devices
+  * media: i2c: rk628: add hdmirx device attribute
+  * media: rockchip: hdmirx: do not create hdmirx_class
+  * media: rockchip: hdmirx: create hdmirx class
+  * arm64: dts: rockchip: rk3588-vehicle-evb enable uart7 for GNSS
+  * ARM: dts: rv1106g-trailcam: Add Tracking camera configuration
+  * media: rockchip: isp: version v2.3.0
+  * ARM: configs: rv1106-trailcam: Tracking camera configuration
+  * usb: dwc3: rockchip-inno: add Kconfig and Makefile
+  * drm: bridge: dw-hdmi: Don't print hdr error log when switch resolution
+  * drm/rockchip: dw_hdmi: Fix `*ERROR* Unknown property [PROP:157:allm_enable]`
+  * ARM: dts: rockchip: rk3288-evb-rk808-linux: Fix hdmi switch resolution error
+  * mfd: Add rockchip rkx110/x120 serdes support
+  * arm64: dts: rockchip: add rk3568m serdes evb support
+  * arm64/configs: rockchip_linux_defconfig: enable CONFIG_MFD_RKX110_X120
+  * arm64: configs: rockchip_defconfig: enable CONFIG_MFD_RKX110_X120
+  * dt-bindings: mfd: add rkx110_x120 document
+  * ASoC: rockchip: rk817-codec: always enable mclk
+  * arm64: dts: rockchip: rk3562-amp: support ap core for amp
+  * arm64: configs: rockchip_linux_defconfig: enable rockchip edac
+  * arm64: configs: rockchip_defconfig: enable rockchip edac
+  * arm64: dts: rockchip: rk3568: add edac device
+  * edac: rockchip: add edac driver
+  * arm64: dts: rockchip: rk3562: Add arm_pmu label
+  * media: rockchip: vicap: fixes rv1126/rk3568 bt1120/bt656 buffer timestamp
+  * ARM: configs: rockchip: Update rv1106-tb-nofastae.config
+  * media: rockchip: isp: support unite mode for isp32
+  * PCI: rockchip: dw: Save and restore PCIE_CLIENT_INTR_MASK_LEGACY in PM
+  * ARM: dts: rockchip: rv1106-thunder-boot: set rkvenc clock to 410000000
+  * rpmsg: rockchip_test: add new device id for mcu
+  * arm64: dts: rockchip: rk3562-amp: change rpmsg shared memory address
+  * arm64: dts: rockchip: rk3562-amp: set mailbox txpoll to 1 ms
+  * ARM: dts: rockchip: add rv1106g-evb2-v12-nofastae-spi-nor
+  * ARM: dts: rockchip: add rv1106g-evb2-v12-nofastae-emmc
+  * ARM: dts: rockchip: Add rv1106 nofastae dtsi
+  * ARM: configs: rockchip: Add rv1106-tb-nofastae.config
+  * ASoC: codecs: Add tda7803 amplifier driver support
+  * clk: rockchip: rk3568: Add protect clocks
+  * drm/bridge: dw-hdmi-qp: Don't read edid again if edid is exist
+  * drm/bridge: dw-hdmi-qp: Add hdcp driver
+  * arm64: dts: rockchip: rk3588: Add hdmitx hdcp14 ext memory
+  * arm64: configs: rockchip_linux_defconfig: enable CONFIG_DTC_SYMBOLS
+  * arm64: dts: rockchip: rk3568: add rk3568-evb8-lp4-v10 support
+  * ARM: dts: rockchip: rv1106-evb-cam: add sc3338
+  * ARM: configs: rv1106-smart-door: enable SC230AI and SC301IOT
+  * arm64: dts: rockchip: fix timing configs of panel k350c4516t for rk3308/rk3562 evb
+  * media: rockchip: vicap fixes error of buffer state while start stream failed
+  * media: i2c: nvp6158: add g_frame_interval ops
+  * clk: rockchip: rk3328: set ddr clk with sip call
+  * Revert "dt-bindings: regulator: Document Rockchip RK860X regulators"
+  * arm64: dts: rockchip: rk3568-evb: assign DCLK_VOP2 to PLL_GPLL
+  * ARM: dts: rockchip: update rk5640 and hdmi sound for rk3288 evb boards
+  * media: rockchip: isp: fix underperformance for frame two-run
+  * arm64: dts: rockchip: rk3528-demo6-ddr3-v10: fix typo
+  * media: i2c: lt6911uxe/lt7911uxc: remove vendor limit of get dcphy param
+  * ARM: dts: rockchip: rv1106g-smart-door: increase ramdisk from 5/10 to 7/15
+  * media: i2c: gc2093 fastboot support hdr
+  * media: rockchip: isp: fix image effect for frame two-run
+  * drm/rockchip: vop2: enable cluster frame reset for rk3588
+  * video: rockchip: rga3: fix the cache sync issue with physically contiguous virt_addr
+  * arm64: configs: rockchip_defconfig: disabled rk_nand
+  * arm64: dts: rockchip: rk3568: set remark info for specification_serial_number
+  * soc: rockchip: opp_select: support remark specification_serial_number
+  * media: i2c: otp_eeprom: add pd_offset in pdaf part
+  * ARM: configs: rk3308bs_aarch32_mipi_display enable CONFIG_DRM_IGNORE_IOTCL_PERMIT
+  * driver: rknpu: Update rknpu driver, version: 0.9.2
+  * drm/rockchip: vop: fix the zpos setting in vop_atomic_plane_reset()
+  * arm64: dts: rockchip: rk3562-evb1-lp4x-v10: Change clkin div to 5 for aclk vo
+  * arm64: dts: rockchip: rk3562-rk817-tablet-v10: Change clkin div to 5 for aclk vo
+  * arm64: dts: rockchip: rk3562: Change clkin div to 4 for aclk vo
+  * media: i2c: imx415 remove vendor limit of get dcphy param
+  * arm64: dts: rockchip: rk3528-demo4-ddr4-v10-linux: enable sdmmc
+  * ARM: dts: rockchip: rv1106g-evb2-v10-dual-camera: sc301iot modified compatible name uppercase to lowercase
+  * media: i2c: sc301iot modified inferface name uppercase to lowercase
+  * usb: dwc3: core: parkmode_disable_hs_quirk depends on CONFIG_NO_GKI
+  * rpmsg: rockchip_test: add delay compensation
+  * media: rockchip: isp: add iqtool video for isp21
+  * arm64: dts: rockchip: rk3399pro-npu: dis u1 and u2 state for dwc3
+  * arm64: dts: rockchip: rk1808: dis u1 and u2 state for dwc3
+  * arm64: dts: rockchip: dis u1 and u2 state for rk3528 dwc3
+  * ARM: dts: rockchip: update rk808 for rk3288-evb-rk808-linux.dts
+  * ARM: dts: rockchip: Add mmc aliases for rk3288-linux.dtsi
+  * drm/bridge: synopsys: dw-hdmi-qp: Fix frl switch error when switching resolution and color at the same time
+  * ARM: configs: enable HDMI and MULTICODECS for rockchip_linux_defconfig
+  * UPSTREAM: ASoC: rt5640: Remove the sysclk and sysclk_src checking
+  * video: rockchip: mpp: fix some iommu hdl register issue
+  * media: rockchip: isp: fix get tb info
+  * soc: rockchip: rockchip_system_monitor: Don't init wide temp when tz is NULL
+  * video: rockchip: mpp: fix task re-add running_list issue
+  * arm64: dts: rockchip: rk3588-evb3-lp5: update for v11 board
+  * media: rockchip: isp: fix list buf delete err
+  * soc: rockchip: amp: include rockchip_amp.h for function prototypes
+  * arm64: dts: rockchip: rk3562-rk817-tablet: adjust vcm configs to reduce noise
+  * media: i2c: dw9763: optimize open/close procedure to reduce noise
+  * UPSTREAM: dt-bindings: usb: snps,dwc3: Add 'snps,parkmode-disable-hs-quirk' quirk
+  * media: i2c: add Maxim Quad GMSL2/GMSL1 to CSI-2 Deserializer driver.
+  * arm64: dts: rockchip: rk3588-vehicle-evb-maxim-max96722: adjust some node name
+  * arm64: dts: rockchip: rk3588-vehicle-evb-maxim-max96712: adjust some node name
+  * arm64: dts: rockchip: rk3562-rk817: set vcc_3v3 regulator on in suspend
+  * mmc: dw_mmc-rockchip: fix tuning return incorrect value in certain situations
+  * arm64: dts: rockchip: rk3562-evb1-lp4x-v10-linux-amp: Add memory node for ap amp
+  * video: rockchip: vehicle: fix support RK356X
+  * arm64: dts: rockchip: rk3588-vehicle-adsp-audio-s66: set i2s3 master
+  * arm64: dts: rockchip: rk3568: default enable mipi_csi2_hw
+  * rpmsg: rockchip: fix mailbox txdone method to polling
+  * arm64: dts: rockchip: rk3562-android: assign a fixed index to mmc devices
+  * arm64: dts: rockchip: Add mmc aliases for rk3562-linux.dtsi
+  * arm64: dts: rockchip: Makefile add rk3399-sapphire-excavator-edp-avb.dtb
+  * arm64: dts: rockchip: add rk3568 evb1 linux amp dts
+  * arm64: dts: rockchip: rk3568: Add arm_pmu label
+  * soc: rockchip: amp: Update coding style and message
+  * soc: rockchip: amp: Add 'boot-on' property assignment support
+  * arm64: dts: rockchip: rk3399-evb: fix dts build error
+  * drivers: rkflash: Add sleep for spinand
+  * dt-bindings: spi: spi-rockchip: Support rockchip,autosuspend-delay-ms
+  * spi: rockchip: Support pm_runtime_use_autosuspend
+  * drm/bridge: synopsys: dw-hdmi-qp: Disable access to registers when hdmi is disabled
+  * arm64: dts: rockchip: rk3588s: Change leakage-voltage-sel for venc
+  * drm/rockchip: dsi2: havle dsc pps pic_width in dual channel dsi
+  * ARM: dts: rockchip: disable hs park mode for usb dwc3 controller
+  * arm64: dts: rockchip: disable hs park mode for usb dwc3 controller
+  * UPSTREAM: usb: dwc3: core: add support for disabling High-speed park mode
+  * spi: rockchip: Add spi thread priority configuration
+  * arm64: dts: rockchip: rk3588-vehicle change the format of car_rk3308_sound to tdm8
+  * ARM: dts: rockchip: add rv1106g-evb2-v12-wakeup.dts
+  * media: rockchip: isp: add lock to save tb info
+  * media: rockchip: isp: remove __isp_config_hdrshd
+  * media: i2c: add sc1346 support
+  * ARM: dts: rockchip: disable rv1103g battery ipc dvfs
+  * arm64: dts: rockchip: rk3588s-evb2-lp5: fix usb2.0-only
+  * video: rockchip: mpp: fix access null task issue
+  * ASoC: rockchip: pdm: Fix register access in probe
+  * ASoC: rockchip: i2s: Fix register access in probe
+  * PCI: rockchip: dw: fix compliance mode set
+  * mtd: spinand: Enable HWP_EN for skyhigh devices
+  * mtd: spinand: esmt: Support new device F50L2G41KA
+  * arm64: dts: rockchip: rk3528: Set default value with level2 for spi
+  * ARM: configs: add rk3308bs_aarch32_mipi_display.config for rk3308bs support mipi display
+  * ARM: rockchip: rv1106: sleep: support hpmcu fast wakeup
+  * ARM: rockchip: Locate kernel at 0x00208000 for RV1106 when CONFIG_RV1106_HPMCU_FAST_WAKEUP=y
+  * ARM: configs: rockchip: add rv1106-wakeup.config
+  * ARM: rockchip: support RV1106_HPMCU_FAST_WAKEUP config
+  * arm64: dts: rockchip: rk3308-evb: add rgb display board
+  * media: rockchip: vicap fixes crop sync error
+  * mtd: spinand: xtx: Support new device XT26Q04DWSIGA
+  * mtd: spinand: gigadevcie: Add 3rd flash id for GD5F1GQ5RExxG
+  * mtd: spinand: xtx: Support new device XT26Q02DWSIGA and XT26Q01DWSIGA
+  * mtd: spinand: dosilicon: Support new device DS35Q1GD-IB
+  * media: i2c: sc530ai change mipi data rate to 936Mbps/lane and vblank up to 6ms
+  * clk: rockchip: rk3588: fix up the frac pll calculation
+  * phy: rockchip: naneng-combphy: fix U3 RX long cable test failed for RK3528
+  * ASoC: rockchip: i2s-tdm: Fix register access in probe
+  * ASoC: rockchip: sai: Fix register access in probe
+  * arm64: dts: rockchip: rk3308: update property logo,kernel
+  * pwm: rockchip: add a little delay to make sure conlock works
+  * drm/bridge: synopsys: dw-hdmi-qp: filter hdmi 2.1 resolution when enable-gpio is not configured
+  * drm/bridge/synopsys: dw-hdmi-qp: fix color error in DVI mode
+  * ARM: dts: rockchip: support dual sc301iot for rv1106-evb-dual-cam.dtsi
+  * arm64: dts: rockchip: rk3588-vehicle-adsp-audio-s66: correct i2s3 iomux
+  * arm64/configs: add rk3308bs_mipi_display.config for support mipi display
+  * arm64: dts: rockchip: rk3399-evb: use multicodecs instead simple card
+  * media: rockchip: vicap: fixes create dummuy buffer fail with size 0
+  * drm/bridge/synopsys: dw-hdmi-qp: Add support for external bridge
+  * video: rockchip: vehicle: remove vehicle dev when exit
+  * PCIe: dw: rockchip: rework compliance test settings
+  * drm/rockchip: direct_show: add cached buf cpu access begin & end
+  * media: rockchip: isp: add api get isp work mode for rockit
+  * media: i2c: rk628: fix 5V detect event report
+  * media: rockchip: isp: fix refer to sram info for multi sensor
+  * media: rockchip: isp: fix stream init pause state
+  * mtd: spinand: xtx: Fix XT26G11C ecc status ops
+  * net: can: rockchip: support rk3568 can v2
+  * drm/rockchip: dsi: set vop2 standby before command mode in rk3566/rk3568
+  * phy: rockchip: csi2-dphy: fixes hw_dev num error for rk3562
+  * video: rockchip: mpp: fix share reset_group do not take effect
+  * arm64: dts: rockchip: update rk3399-sapphire-excavator-lp4-linux.dts
+  * ARM: dts: rockchip: fix timing configs of panel k350c4516t for rv1103/rv1106 evb
+  * drm/rockchip: rgb: add mcu_max_dclk_rate for mode_valid check
+  * drm/rockchip: drv: fix the dclk calculation of mcu interface
+  * rtc: rockchip: fix up the rtc compensation value
+  * arm64: dts: rockchip: rk3568-toybrick-sd0: change gmac1 txdelay
+  * mmc: dw_mmc: Add some safe delay for releasing power leak
+  * video: rockchip: mpp: fix irq on poweroff for rkvdec2_link
+  * video: rockchip: mpp: fix reset_group protected range
+  * arm64: configs: rockchip_defconfig: Enable RT5651 for rk3399 excavator evb
+  * media: rockchip: hdmirx: fix CTS HF2-86 test fail
+  * media: i2c: update sc230ai again map
+  * crypto: rockchip: utils: optimize alignment criteria
+  * crypto: rockchip: Fixed the timeout timer being triggered incorrectly
+  * phy/rockchip: samsung-hdptx: make deskew fifo works on shared pointer
+  * arm64: dts: rockchip: px30: delete dmc 528MHz and en 666MHz ODT
+  * soc: rockchip: tb_service: fixes the register haven't been handle
+  * drm/rockchip: drv: fix the config csc data issue
+  * soc: rockchip: cpuinfo: Add support for rk3528a
+  * drm/rockchip: dw_hdmi: Fix crash caused by hotplug in uboot
+  * drm/rockchip: vop2: report vividhdr feature by property
+  * soc: rockchip: pm_config: support mcu-sleep-config
+  * arm64: dts: rockchip: rk3308b-amp: support config amp os irqs
+  * dt-bindings: soc: rockchip: add define for rockchip amp
+  * irqchip/gic: support config amp os irqs
+  * soc: rockchip: amp: support config amp os irqs
+  * arm64: dts: rockchip: rk3588-vehicle-s66-v10 support wifi/bt
+  * arm64: dts: rockchip: rk3588-vehicle-adsp-audio-s66 fix i2s-tdm
+  * media: rockchip: isp: fix 3dlut for multi sensor
+  * arm64: dts: rockchip: rk3528: Add trim configure for tsadc
+  * thermal: rockchip: Add trim temperature for rk3528
+  * video: rockchip: rga3: avoid premature wake_up causing request to be freed
+  * phy: rockchip: usbdp: amend to improve USB compatibility
+  * mtd: spi-nor: xmc: Support XM25QH256C
+  * arm64: dts: rockchip: rk3588-vehicle-display-v20: not assign clock for vop
+  * media: i2c: add os02k10 driver
+  * ARM: dts: rockchip: rv1106-evb: add mcu display v20 board
+  * arm64: dts: rockchip: add rk3528 demo6 dts
+  * video: rockchip: rga3: fix memory mapping will be skipped when handle is 0
+  * arm64: dts: rockchip: rk3568: Add opps for rk3568j/m
+  * cpufreq: rockchip: set supported hw version for opp
+  * driver: rknpu: Update rknpu driver, version: 0.9.1
+  * media: i2c: sc301iot: pm runtime put device until stream off for thunderboot
+  * drm/rockchip: dw-dp: support hdcp key without aes encrypt
+  * video: rockchip: mpp: fix session cleanup issue
+  * media: i2c: sc3338 support normal boot
+  * arm64: dts: rockchip: rk3588-vehicle-evb-v21: change pcie wifi power control
+  * arm64: dts: rockchip: rk3308bs-evb-mipi-display-v11: reduce drive strength of lcdc d18~23 from 6ma to 2ma
+  * ARM: dts: rockchip: rv1106g-evb2-v10: correct sc3338 gpio
+  * phy: rockchip-typec: use phy interface replace global functions
+  * drm/rockchip: cdn-dp: use phy interface replace global functions
+  * phy: rockchip-typec: Fix DP lane config
+  * drm/rockchip: cdn-dp: support dp training outside dp firmware
+  * drm/rockchip: cdn-dp: Avoid drm_dp_link helpers in dp training
+  * FROMLIST: drm/rockchip: add transfer function for cdn-dp
+  * phy/rockchip: inno-dsidphy: remove duplicate code from inno_dsidphy_mipi_mode_enable()
+  * media: rockchip: isp: fix drc and hdrmge err for multi sensor
+  * video: rockchip: mpp: disable usr poll timeout
+
+ -- Joshua Riek <jjriek@verizon.net>  Sat, 30 Sep 2023 12:14:15 -0400
+
+linux-rockchip-5.10.160 (5.10.160-14) jammy; urgency=medium
+
+  * rockchip_linux_defconfig: enable CONFIG_HID_APPLE
+  * add h28k dts
+  * video: rockchip: rga3: fix 10b compact in win0/1 cannot be changed from user space
+  * arm64: dts: rockchip: use rockchip,hdmi driver for NanoPi R6 and NanoPC T6
+  * arm64: dts: rockchip: add GPIO nodes for NanoPi R6 and NanoPC T6
+
+ -- Joshua Riek <jjriek@verizon.net>  Fri, 29 Sep 2023 19:31:54 -0400
+
+linux-rockchip-5.10.160 (5.10.160-13) jammy; urgency=medium
+
+  * arm64: dts: rockchip: change sound card names for pulseaudio ucm2 compatibility
+  * gpu: drm: rockchip: suppress unsupported format modifier spam
+  * rockchip_linux_defconfig: enable CONFIG_VIDEO_ROCKCHIP_RKISP1 and CONFIG_HID_MAGICMOUSE
+  * fix spreadtrum (sprd) broken bluetooth park link status
+  * net: wireless: Add uwe5622 driver
+  * arm64: dts: add devicetree of orangepi3b
+
+ -- Joshua Riek <jjriek@verizon.net>  Mon, 11 Sep 2023 16:31:55 -0400
+
+linux-rockchip-5.10.160 (5.10.160-12) jammy; urgency=medium
+
+  * arm64: dts: rockchip: add rk3588s Embedfire LubanCat-4
+  * arm64: dts: 9tripod: use rockchip,hdmi for hdmi0 sound
+  * arm64: dts: 9tripod: add dp0 sound node
+  * arm64: dts: odroid-m1: add dt to Makefile
+  * arm64: dts: odroid-m1: add vp0 and gpu props for panfrost
+  * arm64: dts: odroid-m1: add ODROID-M1 dt from 4.19 vendor sources
+  * arm64: dts: Add Makefile rk3588-armsom-w3.dtb for ArmSoM-w3
+  * arm64: dts: Add device tree for ArmSoM-w3
+  * arm64: dts: 9tripod: fix usb-c display port
+
+ -- Joshua Riek <jjriek@verizon.net>  Tue, 29 Aug 2023 18:36:29 -0400
+
+linux-rockchip-5.10.160 (5.10.160-11) jammy; urgency=medium
+
+  * Revert "net: wireless: rockchip_wlan: bcmdhd: Enable CONFIG_BCMDHD_REQUEST_FW"
+  * arm64: dts: hinlink-h88k: update emmc, sd card aliases
+
+ -- Joshua Riek <jjriek@verizon.net>  Sat, 19 Aug 2023 12:10:15 -0400
+
+linux-rockchip-5.10.160 (5.10.160-10) jammy; urgency=medium 
+
+  * revert "iwlwifi: pnvm: pretend to have loaded pnvm file on 5.10 bsp"
+  * net: wireless: add drivers for rtl8811cu, rtl8821c, rtl88x2bu, and rtl8188eu chipsets
+  * debian: changelog: import from linux-5.10-gen-rkr4
+  * rockchip_linux_defconfig: import from linux-5.10-gen-rkr4
+  * scripts: package: customize debian packaging
+  * media: rockchip: isp: version to v2.2.2
+  * arm64: dts: rockchip: rk3562: Optimize clk jitter for DAIs
+  * ASoC: rockchip: sai: Handle clk enable in prepare stage
+  * ASoC: rockchip: sai: Use generic pm_runtime_force_* for system PM
+  * drm/rockchip: vop2: add more plane check
+  * media: i2c: gc1084: add frame synchronization support
+  * phy: rockchip: csi2-dphy: fixes fwnode parse error of cphy
+  * arm64: rockchip_defconfig: Enable CONFIG_DRM_PANEL_MAXIM_MAX96772
+  * net: wireless: rockchip_wlan: porting infineon driver.
+  * input: sensor: accel/gyro sensor: support iam20680.
+  * arm64: dts: rockchip: vehicle-s66: support iam20680.
+  * media: rockchip: isp: fix repeated reporting statistics if stats video on/off
+  * mfd: max96755f: lock status and link reg need access directly.
+  * drm/bridge: maxim-max96755: support dual link mode.
+  * drm/panel: Add panel driver for Maxim MAX96772 based LCDs
+  * media: i2c: it6616: modify set ctrl when video stable
+  * media: i2c: lt6911uxe: modify rk3588_dcphy params
+  * media: rockchip: vicap compatible with rk3588s2
+  * media: rockchip: vicap support combine two mipi to one dev
+  * phy: rockchip: csi2-dphy: logic node of mipi phy can control all hw of mipi phy
+  * include: rk-camera-module: support get/set capture info
+  * include: rkcif-config: support set multi csi info
+  * ARM: dts: rockchip: rv1106 separate the node of csi2 and hw
+  * ARM: dts: rockchip: rv1126 separate the node of csi2 and hw
+  * arm64: dts: rockchip: rk1808 separate the node of csi2 and hw
+  * arm64: dts: rockchip: rk3562 separate hw node of mipi csi2 and mipi dphy
+  * arm64: dts: rockchip: rk3568 separate the node of csi2 and hw
+  * arm64: dts: rockchip: rk3588 separate the node of csi2 logic and hw
+  * arm64: dts: rockchip: rk3588 mipi dphy config modify
+  * arm64: dts: rockchip: rk3588s: Add nvmem-cells for rkcif
+  * arm64: dts: rockchip: rk3588s: Add package serial number for otp
+  * mms: rk_sdmmc_ops: support resume and suspend
+  * mms: rk_sdmmc_ops: disabled command queue while execute
+  * soc: rockchip: sdmmc_vendor_storage: Using multiple blocks of read/write data
+  * mms: rk_sdmmc_ops: support multi-blocks ops
+  * phy: rockchip: mipi-dcphy: fix HSTX_CLK_SEL config
+  * video: rockchip: vehicle: support config rotate & mirror simultaneously
+  * phy: rockchip: inno-usb2: enable bvalid detect irq upon resume
+  * arm64: dts: rockchip: rk3588-vehicle: fix lt7911 compatible name error
+  * drm/rockchip: vop2: only legacy gamma set need extra config done
+  * drm/rockchip: vop2: update pre_dither_down config
+  * media: rockchip: vicap support tool video capture raw with rdbk by isp
+  * usb: typec: tcpm: fix dp altmode negotiation failure
+  * arm64: dts: rockchip: fix frame rate of mcu panel to 60Hz for rk3308/rk3562 evb
+  * ARM: dts: rockchip: fix frame rate of mcu panel to 60Hz for rv1103/rv1106 evb
+  * PCIe: dw: rockchip: Setting rk_pcie_hot_rst_wq before interrupt unmask
+  * arm64: dts: rockchip: rk3588-vehicle: init s66 project dts files
+  * ASoC: rockchip: rk817-codec: Solve pop problems cause by re-configure APLL
+  * media: i2c: optimize gc2053 sync issue
+  * media: rockchip: isp: distinguish buf done or subscribed event for param poll
+  * mmc: dw_mmc-rockchip: Disable PM runtime for SDIO devices
+  * video: rockchip: mpp: fix rk3328 h265d timeout issue
+  * video: rockchip: vehicle: flinger fix rotate-mirror config be changed
+  * video: rockchip: vehicle: fix unexpected change when open set android ready
+  * video: rockchip: vehicle: flinger fix 720P & 1080P rotate blurred issue
+  * video: rockchip: vehicle support drop vop show frames
+  * video: rockchip: vehicle: cif use workqueue to print mipi err
+  * media: i2c: add sc5336 driver
+  * drm/rockchip: vop2: recover win state when exit psr
+  * ARM: dts: rockchip: add rv1106g-evb1-v11-facial-gate for spi-nor flash
+  * rtc: rk808: fix the rtc alarm status clean
+  * usb: gadget: uvc: fix error return in bulk mode
+  * ARM: configs: rv1106-tee.config: enable ROCKCHIP_SIP
+  * firmware: rockchip_sip: support the MCU config
+  * arm64: dts: rockchip: rk3562: modify the default drive strength of lcdc pins
+  * drm/rockchip: vop2: Fix plane parameter check error at interlace mode
+  * mtd: spinand: skyhigh: The vendor requires the devices to be patched
+  * mtd: spinand: foresee: Support new device F35UQA001G-WWT
+  * mtd: spinand: foresee: Support new device F35UQA002G-WWT
+  * mtd: spinand: fmsh: Support new device FM25S01BI3
+  * mtd: spinand: fmsh: Modify incorrect information despite not used
+  * drm/bridge: analogix_dp: add support split area prop
+  * drm/rockchip: dsi2: add support split area prop
+  * drm/rockchip: analogix_dp: support split mode with other display interface
+  * drm/bridge: analogix_dp: support dual connector with other display interface
+  * drm/rockchip: dsi2: support split mode with other display interface
+  * drm/rockchip: drv: Add crtc_clock convert in drm_mode_convert_to_{split,origin}_mode()
+  * drm/bridge: analogix_dp: mv mode_set to bridge .atomic_pre_enable
+  * drm/rockchip: dsi2: mv mode set to encoder .atomic_enable
+  * video: rockchip: rga3: add support for more Porter-Duff blend mode
+  * video: rockchip: rga3: remove old alpha config parameter
+  * video: rockchip: rga3: Modify the log printing of alpha config
+  * video: rockchip: rga3: remove the magic number in rga3 alpha config
+  * video: rockchip: rga3: remove the magic number in rga2 alpha config
+  * video: rockchip: rga3: print request_id and core_id when timeout
+  * video: rockchip: mpp: vepu2: fix multicore dispatch err
+  * ata: ahci: re-enabled FBS after issued software reset
+  * ARM: configs: rockchip_linux_defconfig: disable CONFIG_DM_VERITY
+  * media: rockchip: isp: no set clk if assigned-clock-rates in dts
+  * drm/rockchip: dsi2: Delete unused prop: USER_SPLIT_MODE
+  * drm/rockchip: dw_hdmi: Delete unused prop: USER_SPLIT_MODE
+  * drm/rockchip: vop2: rk3588 add support dual connector split mode
+  * drm/rockchip: drv: add split_area to identification left or right panel
+  * arm64: dts: rockchip: rk3399-evb: add WIFI,poweren_gpio for wifi
+  * mtd: spinand: gigadevice: Sync with upstream
+  * media: rockchip: isp: sync isp stream_on end then to start working
+  * arm64: dts: rockchip: rk3588-vehicle: fix gmac pinctrl-name error
+  * mtd: spinand: dosilicon: Modify redundant ECC status bits
+  * phy: rockchip: naneng-combphy: Fix swing from 250mV to 650mV for rk3562 pcie
+  * PCI: rockchip: dw_ep: Fix wrong return value check
+  * Revert "arm64: dts: rockchip: Assign VOP_ACLK to 750MHZ for rk3588-linux.dtsi"
+  * arm64: dts: rockchip: rk3588: assigned VOP_ACLK to 750MHZ
+  * arm64: configs: rockchip_defconfig: Enable TDM_MULTI_LANES
+  * mtd: spinand: jsc: Fix the error method for judging flash ECC
+  * mtd: spinand: unim: Fix the error method for judging flash ECC
+  * arm64: dts: rockchip: rk3588: Add pinctrl-idle/clk for PDM
+  * ASoC: rockchip: pdm: Fix unbalanced clk reference
+  * ASoC: rockchip: pdm: Fix clk glitch on runtime PM
+  * ARM: configs: rv1106-tee.config: enable CONFIG_TEE and CONFIG_OPTEE
+  * arm64: dts: rockchip: px30s: reduce LP4 overshoot when ODT off
+  * PM / devfreq: rockchip_dmc: Change frequency according to 4k plane
+  * drm/rockchip: vop2: add 4k plane num for dmc
+  * ASoC: rockchip: i2s: Add support for IEC958
+  * spi: Add rockchip spi slave object
+  * iommu/rockchip: use IS_REACHABLE instead of IS_ENABLED
+  * ASoC: rockchip: i2s-tdm: Add support for TDM_MULTI_LANES
+  * arm64: dts: rockchip: rk3588: Fix pinctrl warning log
+  * arm64: dts: rockchip: rk3588: Add pinctrl idle for I2S0/2/3
+  * ASoC: rockchip: i2s-tdm: Optimize TRCM-resume for QUIRKS_ALWAYS_ON
+  * ASoC: rockchip: i2s-tdm: Fix register write failed on QUIRKS_ALWAYS_ON
+  * ASoC: rockchip: i2s-tdm: Add support for pinctrl idle state
+  * media: rockchip: isp: fix ldch for multiple read back
+  * arm64: dts: rockchip: Add rk3528 board for linux.
+  * arm64: dts: rockchip: rk3588: Add mclkout for I2S1-M1
+  * media: rockchip: isp: fix uyvy format for unite mode
+  * ASoC: rockchip: i2s-tdm: Reduce FIFO XRUN warning prompt
+  * arm64: dts: rockchip: rk3588-vehicle: btsco enable 16k pcm support
+  * ASoC: rockchip: pdm: Fix clear on runtime resume
+  * arm64: dts: rockchip: rk3588-evb: Set pcie30x4_clkreqn_m1 gpio output low
+  * arm64: dts: rockchip: rk3562: Enable Schmitt-Trigger for pins I2Sx-CLK
+  * arm64: dts: rockchip: rk3528: Enable Schmitt-Trigger for pins I2Sx-CLK
+  * arm64: dts: rockchip: rk3588: Enable Schmitt-Trigger for pins I2Sx-CLK
+  * arm64: dts: rockchip: rk3568: Enable Schmitt-Trigger for pins I2Sx-CLK
+  * arm64: dts: rockchip: px30: Enable Schmitt-Trigger for pins I2Sx-CLK
+  * arm64: dts: rockchip: rk3308: Enable Schmitt-Trigger for pins I2Sx-CLK
+  * arm64: dts: rockchip: rk1808: Enable Schmitt-Trigger for pins I2Sx-CLK
+  * media: i2c: sensor driver remove limit of modify sensor fps
+  * drm/rockchip: drv: get acm and csc info when boot
+  * drm/rockchip: drv: add a parameter to pass data for crtc loader protect
+  * mmc: dw_mmc-rockchip: fix v2 tuning defect
+  * arm64: dts: rockchip: Add rk3568 toybrick board
+  * arm64: dts: rockchip: add rk3588-vehicle-evb-maxim-max96722.dtsi.
+  * net: rfkill: rk: Add stub for rfkill_get_wifi_power_state() when CONFIG_RFKILL_RK=n
+  * dt-bindings: spi: spi-rockchip: Add description for ready-gpios property
+  * spi: rockchip: Support slave ready gpio signal
+  * dt-bindings: spi: spi-rockchip: Add description for rockchip,cs-inactive-disable property
+  * spi: rockchip: Support rockchip,cs-inactive-disable property
+  * media: i2c: max96722: version 1.01.00
+  * media: i2c: max96712: version 1.06.00
+  * driver: rknpu: Update rknpu driver, version: 0.9.0
+  * arm64: dts: rockchip: rk3562-evb1: add rgb2hdmi display board
+  * arm64: dts: rockchip: rk3588j: Adjust Maximum frequency
+  * arm64: dts: rockchip: rk3588m: Remove unused nodes
+  * arm64: dts: rockchip: rk3588s: Add opps for rk3588j/m
+  * soc: rockchip: opp_select: Add support to parse 'rockchip,pvtm-voltage-sel-hw'
+  * soc: rockchip: opp_select: Implement rockchip_set_opp_supported_hw()
+  * video: rockchip: vehicle: fix flinger buf search issue
+  * video: rockchip: vehicle cif mipi interlaced support correct frame sequence
+  * video: rockchip: vehicle: default use nv12 scale to vop show
+  * video: rockchip: vehicle: nvp6324 add SD_H960 NTSC & PAL support
+  * rfkill: bt: fix unbalanced wake_host_io
+  * drm/rockchip: rgb: add support for rgb666_3x6 and rgb565_2x8 modes
+  * drm/rockchip: vop: add support for rgb666_3x6 and rgb565_2x8 modes
+  * media: uapi: add MEDIA_BUS_FMT_RGB666_3X6 media bus format
+  * driver: rknpu: Compatible with kernel 6.1 compilation, version: 0.8.9
+  * misc: Add rk628 misc drivers
+  * drm/rockchip: vop3: update acm info when it change
+  * drm/rockchip: vop2: update rk3568 max height limit
+  * drm/rockchip: lvds: update MEDIA_BUS_FMT_RGB666_1X7X3_SPWG description
+  * mmc: sdhci-of-dwcmshc: support HS400ES for RK3568
+  * Revert "arm64: rockchip_defconfig: enable CONFIG_ROCKCHIP_DRM_CUBIC_LUT"
+  * Revert "FROMLIST: drm: Extend color correction to support 3D-CLU"
+  * drm/rockchip: vop2: move cubic lut to rockchip drm driver
+  * media: i2c: add ar0822 driver
+  * media: i2c: max96722: version 1.00.00
+  * video: rockchip: rga3: add mm_flag 'RGA_MEM_FORCE_FLUSH_CACHE'
+  * arm64: dts: rockchip: rk3528 boards: btsco enable 16k pcm support
+  * arm64: dts: rockchip: rk356x boards: btsco enable 16k pcm support
+  * arm64: dts: rockchip: rk3588 boards: btsco enable 16k pcm support
+  * arm64: dts: rockchip: rk3562-evb: enable logo display for rgb board
+  * nvme-pci: add NVME_QUIRK_LIMIT_IOQD32 to fix Phison E15 NVMe controller
+  * video: rockchip: mpp: fix crash issue when no iommu
+  * soc: rockchip: mtd_vendor_storage: force config spi nor erase size to 64KB
+  * PCI: rockchip: dw_ep: Delaying the link training after hot reset
+  * video: rockchip: rga3: adapt to kernel-6.1/5.10/4.19
+  * ARM: dts: rockchip: rmii_phy use increment 0 for rv1106-evb
+  * arm64: dts: rockchip: rk3588: Add opp-info support
+  * soc: rockchip: opp_select: adjust memory voltage by otp
+  * video: rockchip: mpp: rkvenc2: Add check for error irq status
+  * media: rockchip: hdmirx: enhanced compatibility.
+  * ARM: dts: rockchip: rv1106: Set spi1 sclk to 200MHz
+  * fiq_debugger: properly stop console thread when tty_fifo is not empty
+  * clk: rockchip: rk3399: fix mac ref clk register description
+  * PCIe: dw: rockchip: Disabled BAR0 and BAR1
+  * i2c: rk3x: get_version after mcu is done for thunder-boot
+  * media: i2c: add sc223a driver
+  * media: rockchip: isp: wait RISC-V with 400ms timeout
+  * drm/panel: simple: add support for panels initialized by spi
+  * video: rockchip: rga3: modify over-constraint on fbcd
+  * PCIe: dw: rockchip: Delaying the link training after hot reset
+  * arm64: dts: rockchip: rk3562-evb: add rgb display board
+  * media: rockchip: vicap fixed error state of group mode and add some debug log
+  * ARM: dts: rockchip: update rv1106g-evb2-v10-dual-camera.dts
+  * arm64: dts: rockchip: rk3562: Add trim configure for tsadc
+  * thermal: rockchip: Add trim temperature for rk3562
+  * thermal: rockchip: Add default value for trim base
+  * misc: lt7911d-fb-notifier: add firmware upgrade support
+  * ARM: configs: rockchip: rv1106 enable sc301iot for battery-ipc
+  * ARM: configs: rockchip: rv1106: add recovery config
+  * meida: i2c: fix gc2503 dual sensor sync issue
+  * media: rockchip: isp: fix uyvy format for isp32
+  * drm/rockchip: dsi: fix RK3562_SYS_GRF_VO_CON1 offset addr
+  * media: i2c: fix sc301iot reset when probe for fastboot
+  * arm64: dts: rockchip: rk356x boards: prepare bt sco settings
+  * arm64: dts: rockchip: rk3588-android: support minidump
+  * arm64: smp: minidump save cpu context when ipi stop
+  * fs: pstore: register buffers to minidump
+  * soc: rockchip: add rk minidump support
+  * arm64: rockchip_defconfig: enable minidump
+  * arm64: dts: rockchip: rk3588/rk3588s boards: prepare bt sco settings
+  * clk: rockchip: Implement rockchip_clk_register_armclk_v2()
+  * mali400: Fix compilation errors on clang-r487747c.
+  * net: wireless: rockchip_wlan: bcmdhd: Fix compilation errors on clang-r487747c.
+  * spi: rockchip: Modify the slave tx finish judgement
+  * drm/rockchip: vop: add check if global/pixel alpha both enable
+  * drm/rockchip: debugfs: add support to enable color bar
+  * ASoC: rockchip: rk817-codec: remove some useless SOC_ENUM_SINGLE_DECLs
+  * clk: rockchip: rk3568: fix pwm clk register description
+  * ASoC: rockchip: rk817-codec: Fix a large number of mclk counts being enabled
+  * ASoC: rockchip: rk817-codec: re-support recover playback/capture path after resume
+  * spi: rockchip-test: Check the spi sync actual length
+  * spi: rockchip: Add transfer completion wait
+  * mtd: spinand: xincun: Add code
+  * ASoC: rockchip: sai: keeping naming style of 'rockchip_' prefix for sai_suspend/resume
+  * ASoC: rockchip: sai: Add support system PM suspend/resume
+  * arm64: dts: rockchip: add rk3588 vehicle evb v21 dts for demo
+  * drm/rockchip: vop: fix alpha mode error for vop lite
+  * drm/rockchip: vop2: fix esmart pd always be closed and lead to show black screen
+  * mm/readahead: Fix for GKI
+  * MALI: bifrost: Not to call kbase_ipa_reset_data() if rockchip simple-power-model is used
+  * arm64: dts: rockchip: add camera dtsi on rk3562-evb2-ddr4-v10-linux.dts
+  * arm64: dts: rockchip: Assign VOP_ACLK to 750MHZ for rk3588-linux.dtsi
+  * pwm: rockchip: enable dclk scale function in oneshot mode
+  * soc: rockchip_system_monitor: Fix TPYE -> TYPE typo
+  * media: i2c: max96712: version 1.05.00
+  * drm/panel: maxim-max96752f: Fix pin assignment
+  * soc: rockchip: tb_service: unmask mcu_done after all registered cb were finished
+  * arm64: dts: rockchip: rk3588s: Fix low-volt-mem-read-margin
+  * arm64: dts: rockchip: rk3588: Fixed the rkvenc1 init frequency
+  * phy: rockchip: samsung-dcphy: restart rx after apb reset when rx is streaming
+  * fiq_debugger: tty write to tty fifo
+  * ARM: dts: rockchip: rv1106 boards: Add sdmmc idle state support
+  * ARM: dts: rockchip: rv1126: Add sdmmc idle state support
+  * ARM: dts: rockchip: add idle state for sdmmc of rv1106-pinctrl
+  * ARM: dts: rockchip: add idle state for sdmmc of rv1126-pinctrl
+  * media: i2c: max96712: version 1.04.00
+  * media: rockchip: vicap: fixes s_selection, support to set crop area
+  * media: rockchip: vicap: only enum outout formats that terminal sensor support to use
+  * media: rockchip: vicap: add security testing for output format
+  * arm64: dts: rockchip: rk3528-demo: Enable dfi
+  * arm64: dts: rockchip: rk3528-evb: Enable dfi
+  * arm64: dts: rockchip: rk3528: Add ddr related nodes
+  * PM / devfreq: rockchip_dmc: Add support for rk3528
+  * dt-bindings: devfreq: rockchip_dmc: Add rk3528 support
+  * PM / devfreq: rockchip-dfi: Add support for rk3528 dfi
+  * dt-bindings: devfreq: rockchip_dfi: Add rk3528 support
+  * media: i2c: lt7911uxc: Fix print format string
+  * ARM: configs: rockchip: add uvc to rv1106-rndis.config
+  * media: rockchip: isp: fix isp32 and lite buf output err due to mi on/off
+  * dt-bindings: suspend: rk3528: add sleep pin defines
+  * soc: rockchip: pm_config: support sleep-pin-config
+  * arm64: dts: rockchip: add rk3588-evb7-v11 board
+  * arm64: dts: rockchip: rk3588: Fixed the init frequency
+  * Mali: bifrost: disable tiler heap reclaiming temporally
+  * arm64: dts: rockchip: rk3528-evb: prepare bt sco settings
+  * arm64: dts: rockchip: rk3528: Split I2Sx pinctrl
+  * drm/rockchip: dw-dp: notify audio when enable/disable dptx
+  * media: i2c: lt6911uxe/c: set default timing
+  * media: i2c: lt7911uxc: update driver to V0.0X01.0X07
+  * media: i2c: lt6911uxe: add interlaced support
+  * arm64: configs: update camera sensors for rockchip_linux_defconfig
+  * arm64: dts: rockchip: add camera sensor configuration for rk3588s-evb1-lp4x-v10-linux.dts
+  * phy: rockchip: naneng-combphy: Fix Rx squelch for RK3528 U3
+  * phy: rockchip: naneng-combphy: Fix Rx squelch for RK3562 U3
+  * phy: rockchip: naneng-combphy: Fix Rx squelch for RK3568 U3
+  * mmc: dw_mmc: Add normal and idle pinctrl control
+  * crypto: rockchip: v2: Fix pointer judgment errors
+  * input: rockchip_pwm_remotectl: workaround rk3528 IR code reading issue
+  * media: rockchip: vicap change compact mode by align of width
+  * arm64: dts: rockchip: rk3308b-amp: Increase the size of AMP reserved memory to 18MB
+  * Revert "drm: Not mark crtc state as connectors_changed when a writeback connector attatch to a crtc"
+  * drm/rockchip: vop2: No need for a full modested when the only writeback connector changed
+  * drm/edid: add HF-EEODB support to EDID read and allocation
+  * clk: rockchip: clk-out: Add CLK_IGNORE_UNUSED flag
+  * ARM: configs: add rv1106-nand.config
+  * video: rockchip: rga3: fix compile errors on kernel-6.1
+  * media: i2c: max96712: add rk3588 dcphy param get and set ioctl cmd.
+  * media: rockchip: hdmirx: notify the bound cpu to bl31.
+  * ASoC: es8323: fix 32kHz coeff configurations
+  * arm64: dts: rockchip: rk3588-vehicle-max96712: add pocen-gpios for dphy1 poc_en.
+  * media: i2c: max96712: add poc_en gpio conctrol for remote camera power suppply.
+  * phy: rockchip: naneng-combphy: Fix swing to 650mv under 100M refclk for rk3562
+  * phy: rockchip: naneng-combphy: Fix swing to 650mv under 100M refclk for rk3528
+  * ASoC: rockchip: i2s-tdm: try normal clear before switch master mode
+  * ethernet: stmmac: dwmac-rk: Add bgs increment
+  * arm64: dts: rockchip: rk3588-vehicle-evb-maxim-max96712: default disable fsync
+  * media: i2c: max96712: fix 4 lane mode mipi link freq index setting error.
+  * ARM: configs: rv1106: Optimize for cpu load
+  * net: phy: rk630: Enable aps && uaps to save power consumption
+  * ethernet: stmmac: dwmac-rk: Fix Dribble bit error at 10M mode
+  * arm64: dts: rockchip: change dp sound card name on rk3588 platform
+  * ARM: dts: rv1106: rmii_phy bgs increment to 2
+  * net: phy: rk630phy: Add adc performance
+  * ARM: configs: rv1106: Updated by savedefconfig
+  * clk: rockchip: rv1106: adjust pvtpll length for cpu
+  * ARM: dts: rv1106: Change gmac rx dma size to 128
+  * ARM: dts: rv1106: Set flow ctrl off for gmac
+  * PCI: rockchip: dw_ep: Update pcie ep status.
+  * media: i2c: max96712: version 1.03.00
+  * pwm: rockchip: disable the pclk dynamic switch if oneshot mode enabled
+  * spi: rockchip-sfc: Optimize the judgment mechanism completed by the controller
+  * mm: optimize readahead for the file with fscrypt
+  * phy: rockchip-samsung-hdptx-hdmi: Don't set bus_width 8 when probe
+  * tee: optee: interrupt an RPC when supplicant has been killed
+  * arm64: dts: rockchip: add rk3588-evb7-lp4-v11-linux-ipc.dts
+  * media: rockchip: vicap send sof both online and read back
+  * input: touchscreen: gt1x: remove all usages of mm_segment_t
+  * Mali: bifrost: use task_tgid_vnr() and task_pid_vnr() to get tgid and pid
+  * MALI: rockchip: upgrade bifrost DDK to g18p0-01eac0, from g17p0-01eac0
+  * ARM: configs: rv1106: Add config for TEE support
+  * ARM: dts: rv1106: Add PSCI node
+  * ARM: dts: rv1106: Add Non-secure physical timer
+  * uapi/fec-config.h: Fix UAPI compile-test
+  * uapi/rk_vcm_head.h: Fix UAPI compile-test
+  * uapi/rk-camera-module.h: Fix UAPI compile-test
+  * uapi/rk-preisp.h: Fix UAPI compile-test
+  * uapi/rk-isp32-config.h: Fix UAPI compile-test
+  * uapi/rk-isp3-config.h: Fix UAPI compile-test
+  * uapi/rk-ispp-config.h: Fix UAPI compile-test
+  * uapi/rk-isp1-config.h: Fix UAPI compile-test
+  * uapi/rk-isp21-config.h: Fix UAPI compile-test
+  * uapi/rk-isp2-config.h: Fix UAPI compile-test
+  * uapi/rkcif-config.h: Fix UAPI compile-test
+  * uapi/rk-video-format.h: include types.h
+  * uapi/rockchip_drm.h: Fix UAPI compile-test
+  * uapi/dw_hdcp2.h: Fix UAPI compile-test
+  * uapi/rkflash_vendor_storage.h: include types.h
+  * ARM: configs: rockchip: Add rv1106-pm.config
+  * drm/panel: maxim-max96752f: Add support for ogm 101fhbllm01
+  * drm/bridge: max96745: Add tx_rate switch for twisted-pair cable
+  * soc: rockchip: iomux fix compile error
+  * firmware: rockchip_sip: fix error in cpu_logical_map_mpidr
+  * arm64: dts: rockchip: vehicle-display: set dsi resolution to 1920x720@60
+  * phy: rockchip: inno-usb2: power on phy if linestate is SE1
+  * usb: dwc3: gadget: prepare at least twice txfifo for each ep
+  * drm/bridge: synopsys: dw-hdmi-qp: Achieve the same frequency color seamless switch
+  * phy: rockchip-samsung-hdptx-hdmi: Fix hdmi Inter-Pair Skew exceed the limits
+  * ASoC: rockchip: rk817-codec: Be stable PLL status during switch sample rate and mclk
+  * FROMLIST: usb: xhci: account for num_trbs_free when invalidating TDs
+  * arm64: dts: rockchip: rk3528: Add mbist-vmin for cpu gpu and dmc
+  * arm64: dts: rockchip: rk3528: Add 12500uV for cpu low frequencies
+  * arm64: dts: rockchip: rk3588: Change tx/rx queue to 1 for gmac
+  * arm64: dts: rockchip: Add uio nodes for rk3588
+  * MALI: midgard: Fix a bug of dereferencing possible ERR_PTR()
+  * drm/rockchip: dw_hdmi: Fix check yuv422 color format err
+  * crypto: rockchip: fixed probabilistic crashes in multithreading
+  * drm/rockchip: vop3: plane display size check use crtc_* parameter is more correct
+  * drm/rockchip: dw_hdmi: Fix double register HDR_OUTPUT_METADATA prop at non RK3588 platform
+  * ASoC: rockchip: i2s-tdm: Optimize TRCM on slave mode
+  * arm64: dts: rockchip: rk3588-vehicle-evb: initialize default pull up RK3308 reset pin
+  * drm/bridge: synopsys: dw-hdmi-qp: Fix cec irq register failed
+  * arm64: dts: rockchip: Add rk3308b-evb-amic-v10-amp.dts
+  * arm64: dts: rockchip: rk3588: Disable u1 and u2 state for USB OTG1 device
+  * drm/rockchip: dsi: get bus_flags from display_info in atomic_check
+  * dt-bindings: nvmem: add rockchip-secure-otp bindings
+  * arm64: dts: rockchip: rk3528: Add secure otp node
+  * nvmem: add Rockchip Secure OTP driver
+  * arm64: dts: rockchip: rk3588-vehicle-evb: add rgmii phy rtl9010a support
+  * net: phy: realtek: Add rtl9010a support
+  * net: stmmac: Add 100Base-T1 and 1000Base-T1 support
+  * media: i2c: Add imx492 support
+  * drm/rockchip: dw_hdmi-qp: Fix crash when disable uboot logo
+  * arm64: configs: add rk3562_robot.config fragments
+  * phy: rockchip: mipi csi2 dphy fixes grf write error of val for lane select
+  * arm64: dts: rockchip: rk3588-vehicle-evb-maxim-max96712: default enable auto deskew and fsync for max96712
+  * media: i2c: max96712: version 1.02.00
+  * arm64: dts: rockchip: support icm42607 for rk3588 EVB7/LGA.
+  * ARM: dts: rockchip: rv1103g-evb1-v11: Add vdd_arm changes
+  * ARM: dts: rockchip: rv1106g-evb2-v11-emmc: wifi add host_wake_irq
+  * ARM: configs: rv1106-smart-door: enable EXT4 FS
+  * phy: rockchip: naneng-combphy: Fix CTLE register setting error for rk3528
+  * arm64: dts: rockchip: add rk3562j-core-ddr4-v10.dts
+  * ARM: dts: rockchip: rv1106: add firmware and optee node
+  * arm64: dts: rockchip: add rk3562j.dtsi
+  * PM / devfreq: rockchip_dmc: Add lock for rockchip_dmcfreq_get_dev_status
+  * arm64: dts: rockchip: rk3588-vehicle-evb-v20: wifi work stable.
+  * media: i2c: jaguar1: add SD_H960 NTSC & PAL support
+  * ARM: rv1106_defconfig: enable CONFIG_ROCKCHIP_SYSTEM_MONITOR
+  * arm64: dts: rockchip: rk3588-vehicle-evb: add bt sound support
+  * arm64: dts: rockchip: rk3588-vehicle: Add lt7911d node
+  * misc: Add Lontium LT7911D FB notifier driver
+  * arm64: rockchip_defconfig: Enable CONFIG_LT7911D_FB_NOTIFIER
+  * drm/bridge: rohm-bu18tl82: Fix startup sequence
+  * arm64: dts: rockchip: rk3588-vehicle-serdes-display: bu18tl82 use VPLL0 as reference clock of CLLTX
+  * arm64: dts: rockchip: rk3588-evb1: add dsi dsc display board
+  * ARM: dts: rockchip: rv1106: adjust max-volt for the cpu opp-table
+  * dt-bindings: net: dwmac: Add optional snps,flow-ctrl property
+  * ethernet: stmmac: Add flow ctrl configuration from DTB
+  * mfd: rk808: Drop mfd_remove_devices for devm_ added devices
+  * arm64: dts: rockchip: rk3588-vehicle-evb: add rk3308 device node
+  * drm/rockchip: logo: Warn when logo memory alignment is not expected
+  * arm64: dts: rockchip: Add RK3308b amp reserved memory
+  * arm64: dts: rockchip: add rk3562 dictpen test3 v20 board
+  * media: rockchip: isp: fix sync with 3a_server
+  * media: rockchip: ispp: fix null for ispp vir device disable
+  * media: rockchip: isp: force offset to 0 when frame end for wrap mode
+  * drm/rockchip: vop2: add polarity configs of rgb sync pins
+  * arm64: dts: rockchip: rk3568: support adjust opp-table by otp
+  * media: rockchip: vicap fixes error buffer state when lack buffer equal 2
+  * media: rockchip: hdmirx: modify timging unstable return.
+  * media: i2c: nvp6188 update to version v0.2.0
+  * drm/rockchip: dw_hdmi: Fix write rk3588 grf in other platform
+  * video: rockchip: rga3: fix compile errors on stable-4.19-rv1126
+  * media: rockchip: isp: fix error for multi sensor with scale up case
+  * clk: rockchip: rk3308: fix uart clk to support more frequency points
+  * drm/rockchip: dw_hdmi-qp: Disable scramble when hdmi disable
+  * arm64: dts: rockchip: rk3588-vehicle-evb: nvp6188 adapt to evb v20/v11
+  * drm/panel: maxim-max96752f: Add HannStar HSD123JPW3-A15 panel
+  * drm/panel: maxim-max96752f: Add power supply regulator support
+  * mfd: max96745: Add pwdnb GPIO support
+  * video: rockchip: mpp: fix some issue for ccu flow
+  * arm64: dts: rockchip: rk3588s: add clock config for avsd
+  * drm/rockchip: vop2: fix hactive 4-pixel alignment in mode_fixup
+  * drm/rockchip: dw_hdmi-qp: Fix kernel logo color error
+  * mailbox: rockchip: amend txdone method to polling
+  * dt-bindings: mailbox: rockchip: add tx poll period property
+  * pinctrl/rockchip: fix rk3568 pull comments
+  * media: rockchip: isp: fix isp rockit frame rate err
+  * arm64: dts: rockchip: rk3588-vehicle-evb: add dis_u2_susphy_quirk config
+  * driver: rknpu: Update rknpu driver, version: 0.8.8
+  * video: rockchip: mpp: increase iep2 timeout threshold
+  * drm/rockchip: vop2: add writeback virtual height support
+  * video: rockchip: mpp: fix soft timeout to 500 ms for rkvdec2_link
+  * video: rockchip: mpp: fix rkjpegd define
+  * arm64: dts: rockchip: rk3588-vehicle-evb-v20: reduce sdio power on delay.
+  * arm64: dts: rockchip: rk3588-vehicle: fix max96712 gpio pinctrl error.
+  * drm/bridge: dw-mipi-dsi: fix request hs clk in dual channel dsi
+  * drm/rockchip: dsi: fix dual channel dsi specify lane rate by "rockchip,lane-rate"
+  * drm/rockchip: dsi: find panel/bridge only once in dual dsi application
+  * drm/rockchip: dw-dp: optimizing connected status detect process
+  * media: i2c: max96712 driver update to version 1.01.00
+  * ASoC: rockchip: sai: Add support for PCM R/W Wait Time
+  * ASoC: rockchip: sai: Fix BCLK glitch
+  * ASoC: rockchip: sai: Add support for Multi-DAIs
+  * ASoC: rockchip: sai: Add support for CLK-ALWAYS-ON quirks
+  * video: rockchip: mpp: fix dule-core synergy stuck issue
+  * video: rockchip: mpp: stop vepu2 before reset
+  * ASoC: rockchip: sai: Remove the space prefix for SBW
+  * ASoC: rockchip: sai: Add support for Clk-Auto Switch
+  * ASoC: rockchip: sai: Fix Master / Slave Mode Switch
+  * ASoC: dummy_codec: Add support for more capabilities
+  * ARM: dts: rockchip: rv1106g-evb1-v11: Add vdd_arm changes
+  * arm64: dts: rockchip: rk3562: Enable viLKsvPwrActive for soc bus
+  * mtd: spi-nor: esmt: Support New devices
+  * mtd: spi-nor: fmsh: Support New devices
+  * mtd: spi-nor: gigadevice: Support New devices
+  * mtd: spinand: gsto: Add code
+  * mtd: spinand: hyf: Support new devices
+  * mmc: convert thunder boot dependency
+  * ARM: dts: rockchip: rv1106: add node for system sleep
+  * ARM: rockchip: support rv1106 suspend
+  * ARM: rockchip: add some pm-related functions
+  * video: rockchip: mpp: fix rk3528 avsd not probe issue
+  * arm64: dts: rockchip: rk3588-vehicle-maxim-serdes: Add BOE AV156FHT L83 support
+  * arm64: rockchip_defconfig: Enable CONFIG_DRM_PANEL_MAXIM_MAX96752F
+  * drm/panel: Add panel driver for Maxim MAX96752F based LCDs
+  * media: i2c: techpoint: add support 4 channel 2 lane mode
+  * drm/rockchip: dsi2: fix NULL in component_ops .unbind helper
+  * media: rockchip: vicap: fixes cma can not alloc when capture raw
+  * media: rockchip: vicap: fixed vc err for multi channel
+  * media: rockchip: hdmirx: fix timing info for interlaced resolution
+  * media: rockchip: hdmirx: fix code error for cec register failed
+  * drm/rockchip: dw_hdmi: Allow RK3588 4K-60Hz YUV444/YUV422/RGB output
+  * drm/bridge: synopsys: dw-hdmi-qp: Support rk3588 hdmi yuv422
+  * drm/rockchip: vop2: Support rk3588 hdmi yuv422 output mode
+  * video: rockchip: mpp: refactor rkvdec2_link worker flow
+  * Mali: bifrost: make some functions not depend on CONFIG_DEBUG_FS
+  * MALI: bifrost: not to call kbase_ipa_init() if rockchip simple-power-model is used
+  * arm64: dts: rockchip: rk3528-evb1: close es7243_sound
+  * arm64: dts: rockchip: rk3562: adjust opp-table for cpu/gpu/npu/dmc
+  * soc: rockchip: opp_select: support get pvtm from otp
+  * drm/rockchip: dw_hdmi-qp: fix hdmi->i2c null pointer
+  * drm/rockchip: dw_hdmi: Fix phy pll rate overflow when frl 48G mode
+  * misc: add rockchip standard EP function driver
+  * PCI: add rockchip vendor id
+  * drm/rockchip: dw-dp: use vsc sdp only output yuv420 or hdr
+  * drm/rockchip: dw_hdmi: Fix hdmi2.0 mode no signal when plug out before hdmi bind
+  * drm/rockchip: dw_hdmi: hdmi plug out don't check mode valid when play hdr video
+  * media: rockchip: hdmirx: enhance compatibility and stability
+  * media: rockchip: vicap: hdr buffer sync detect by fe timestamp
+  * media: rockchip: vicap: fixes dvp capture not config buffer in rockit mode
+  * arm64: configs: rockchip_gki: support PX30 RK3399
+  * arm64: dts: rockchip: add px30 ddr4 v10 evb for linux
+  * arm64: dts: rockchip: rk3588-android: add reserved memory for vendor storage
+  * arm64: dts: rockchip: rk3568-android: add reserved memory for vendor storage
+  * arm64: dts: rockchip: rk3399-android: add reserved memory for vendor storage
+  * arm64: dts: rockchip: px30-android: add reserved memory for vendor storage
+  * arm64: dts: rockchip: rk3562: add reserved memory for vendor storage
+  * rtc: rockchip: fix the rtc compensation wait time
+  * rtc: rockchip: Add timeout judgment for update rtc status
+  * soc: rockchip: vendor_storage: add ram buffer for gki
+  * soc: rockchip: vendor_storage: move some defines to common header file
+  * drm/rockchip: vop3: add rb_swap check for serial rgb format
+  * arm64: dts: rockchip: Add RK3588 amp dtsi
+  * arm64: dts: rockchip: rk3562-evb: enable logo display for mcu board
+  * mtd: spinand: macronix: Fix mx35ufxge4ad
+  * drivers: net: wireless: update cywdhd to 100.10.80
+  * media: rockchip: vicap: rv1106 support to stop dma capture when not active buffer
+  * drm/bridge: maxim-max96755: Use the parent's extcon
+  * mfd: max96755f: Add extcon support
+  * mfd: max96755f: Add patgen_mode debug node
+  * video: rockchip: rga3: print dma_buf_map error code
+  * arm64: rockchip_defconfig: update by savedefconfig
+  * arm64: rockchip_defconfig: enable CONFIG_TOUCHSCREEN_ILI210X for vehicle evb
+  * input: touchscreen: ili210x: add location info for multi-touch
+  * arm64: dts: rockchip: rk3588-vehicle-evb: add ilitek touch support base rohm serdes chip
+
+ -- Joshua Riek <jjriek@verizon.net>  Mon, 14 Aug 2023 10:47:27 -0400
+
+linux-rockchip-5.10.160 (5.10.160-9) jammy; urgency=medium
+
+  * arm64: dts: nanopct6: add sfc node
+  * arm64: dts: add overlays for radxa cm5 io
+  * arm64: configs: enable VHOST_NET and NVME_HWMON for linux rockchip defconfig
+  * add fxblox-rk1 board dts
+  * arm64: dts: h88k: enable pcie2x1l2
+  * arm64: dts: make usbdrd_dwc3_0 -> dr_mode `host` for nanopi-r6-common
+
+ -- Joshua Riek <jjriek@verizon.net>  Wed, 09 Aug 2023 21:48:31 -0400
+
+linux-rockchip-5.10.160 (5.10.160-8) jammy; urgency=medium
+
+  * arm64: dts: blade3: add sata2 overlay for mini pcie port
+  * net: wireless: add drivers for rtl8188eu
+  * fix indiedroid wifi DTS by removing WIFI,poweren_gpio (armbian#71)
+
+ -- Joshua Riek <jjriek@verizon.net>  Tue, 25 Jul 2023 08:52:31 -0400
+
+linux-rockchip-5.10.160 (5.10.160-7) jammy; urgency=medium
+
+  * arm64: dts: cm5: swap sdhci and sdmmc aliases
+  * arm64: dts: cm5 io: use mmclkout_i2s0 for es8316
+  * arm64: dts: cm5 io: change i2c7m0 to i2c8m2 for es8316
+  * arm64: dts: cm5 io: add user led
+  * arm64: dts: cm5: add at24c16
+  * arm64: configs: enable CONFIG_EEPROM_AT24 in the rockchip linux defconfig
+  * arm64: dts: add pwm fan node for radxa cm5 io
+  * arm64: dts: blade3: swap cursor and display plane
+  * arm64: dts: blade3: fix hdmirx detection
+  * arm64: dts: blade3: enable dp0 and dp1 audio
+  * arm64: dts: blade3: use rockchip,hdmi as hdmirx audio driver
+  * arm64: configs: enable cephfs support in the rockchip linux defconfig 
+
+ -- Joshua Riek <jjriek@verizon.net>  Wed, 19 Jul 2023 07:41:07 -0400
+
+linux-rockchip-5.10.160 (5.10.160-6) jammy; urgency=medium
+
+  * arm64: configs: sync rockchip linux defconfig with armbian
+  * arm64: configs: enable SCSI support types in rockchip linux defconfig
+  * mixtile: Blade 3: enable i2s5_8ch & i2s7_8ch for hdmi audio (#67)
+  * workflow: don't upload kernel in pr (#66)
+  * ethernet: dwmac4: fix VLAN in promisc mode not supported
+  * drm/rockchip: dw-dp: suppress "timeout waiting for AUX reply" spam
+  * arm64: dts: nanopir6: use proper mmc aliases
+  * mixtile: add dts & Makefile for Mixtile Blade 3
+  * arm64: configs: add dvb/camera/radio drivers to the rockchip linux defconfig
+  * arm64: dts: rock5a: providing more cooling levels for pwm-fan (#63)
+  * meko: v12 MeiZhuo: drop DP changes from vendor
+  * meko: es8311: v10, preserve "arm64: dts: rockchip: rk3588: Use mclkout_i2sx" from 005807f
+  * meko: add new DTs to Makefile
+  * meko: vk2c21 LCD driver for the R58X-PRO
+  * meko: remove silly indentation changes; bring back amazingfate's hdmiin-sound changes in the v10
+  * meko: updated DT's from `blueberry_edge_patch_230617` from vendor
+  * radxa-cm5: add Radxa CM5 DT + Makefile
+
+ -- Joshua Riek <jjriek@verizon.net>  Wed, 12 Jul 2023 21:46:37 -0400
+
+linux-rockchip-5.10.160 (5.10.160-5) jammy; urgency=medium
+
+  * revert "iwlwifi: pnvm: pretend to have loaded pnvm file on 5.10 bsp (#60)"
+
+ -- Joshua Riek <jjriek@verizon.net>  Tue, 27 Jun 2023 17:12:07 -0400
+
+linux-rockchip-5.10.160 (5.10.160-4) jammy; urgency=medium
+
+  * iwlwifi: pnvm: pretend to have loaded pnvm file on 5.10 bsp (#60)
+  * Upload build artefacts (#59)
+  * arm64: dts: rockchip: use rockchip,hdmi as hdmirx audio driver ref: commit 99edbfa6ee142e2968c2b9ebb041016aa0ba9c75
+  * media: rockchip: hdmirx: hdmirx_audio_startup always return 0 PulseAudio would fail to load alsa card if hdmirx_audio_startup return error
+  * arm64: dts: use mmclkout_i2sx for opi5plus, nanopct6, and 9tripod
+  * arm64: dts: remove unused 9tripod device tree files
+  * Switch away from organisation
+  * Add workflow_dispatch trigger (#52)
+  * Store caches at this repository (#50)
+  * arm64: dts: opi5: move dp0 in vp2
+  * sound: rockchip: fix dp sound issue
+
+ -- Joshua Riek <jjriek@verizon.net>  Tue, 27 Jun 2023 09:26:32 -0400
+
+linux-rockchip-5.10.160 (5.10.160-3) jammy; urgency=medium
+
+  * Enable action script for kernel recompilation on PR (#42)
+  * arm64: dts: add overlay for ap6275p
+  * arm64: dts: opi5b: enable wireless and bluetooth nodes
+  * arm64: dts: opi5: disable wireless and bluetooth nodes
+  * arm64: dts: enable hdmi ece nanopir6 and nanopct6
+  * arm64: dts: nanopct6: increase cma size to 256mb
+  * arm64: dts: nanopct6: add hdmi0 and hdmi1 to display subsystem node
+  * arm64: dts: fix cursor and display plane for nanopir6 and nanopct6
+
+ -- Joshua Riek <jjriek@verizon.net>  Wed, 14 Jun 2023 18:24:54 -0400
+
+linux-rockchip-5.10.160 (5.10.160-2) jammy; urgency=medium
+
+  * arm64: dts: opi5plus: enable hdmirx node
+  * media: rockchip: hdmirx: silence spam on opi5plus 
+
+ -- Joshua Riek <jjriek@verizon.net>  Fri, 09 Jun 2023 09:59:49 -0400
+
+linux-rockchip-5.10.160 (5.10.160-1) jammy; urgency=medium
+
+  * Initial release.
+
+ -- Joshua Riek <jjriek@verizon.net>  Wed, 07 Jun 2023 11:03:10 -0400
