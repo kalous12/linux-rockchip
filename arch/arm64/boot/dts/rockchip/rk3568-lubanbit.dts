@@ -9,23 +9,8 @@
 #include "rk3568.dtsi"
 
 / {
-	model = "Zerok auspice";
-	compatible = "Zerok,auspice", "rockchip,rk3568";
-
-	gpio_keys: gpio-keys {
-		status = "okay";
-		compatible = "gpio-keys";
-
-		power {
-			debounce-interval = <100>;
-			gpios = <&gpio3 RK_PC3 GPIO_ACTIVE_LOW>;
-			label = "GPIO Key Power";
-			interrupt-parent = <&gpio3>;
-			interrupts = <RK_PC3 IRQ_TYPE_LEVEL_LOW>;
-			linux,input-type = <EV_KEY>;
-			linux,code = <KEY_POWER>;
-		};
-	};	
+	model = "lubanbit";
+	compatible = "jixiang,lubanbit", "rockchip,rk3568";
 
 	fiq_debugger: fiq-debugger {
 		compatible = "rockchip,fiq-debugger";

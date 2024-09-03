@@ -310,6 +310,6 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3568-lubancat-2-v2.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3568-lubancat-2h.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3568-lubancat-2io.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3568-lubancat-2n.dtb
-dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3568-auspice.dtb
+dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3568-lubanbit.dtb
 
 subdir-y := $(dts-dirs) overlay
